@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ComponentsPageComponent implements OnInit {
 
   constructor() { }
-
+  selectedResult = 'Dolor';
   ngOnInit() {
   }
 

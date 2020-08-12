@@ -24,6 +24,7 @@
     "@speak/ng-bcl": "^2.0.0-r00116",
     "@speak/ng-sc-cli": "^0.3.3",
     "@speak/styling": "^1.0.0-r00110",
+    "popper.js": "^1.15.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

@@ -13,8 +13,14 @@ import { ScApplicationHeaderModule } from '@speak/ng-bcl/application-header';
 import { StartPageComponent } from './start-page/start-page.component'
 import { RouterModule } from '@angular/router';
 import { ComponentsPageComponent } from './components-page/components-page.component';
-import {ScExpanderModule} from '@speak/ng-bcl/expander'
+import { ScExpanderModule } from '@speak/ng-bcl/expander'
 import { ScButtonModule } from '@speak/ng-bcl/button';
+import { ScBreadcrumbModule } from '@speak/ng-bcl/breadcrumb'
+import { ScTabsModule } from '@speak/ng-bcl/tabs'
+// import {ScSearchableDropListModule} from '@speak/ng-bcl/searchable-drop-list'
+import { ScPopoverModule } from '@speak/ng-bcl/popover'
+import { ScProgressBarModule } from '@speak/ng-bcl/progress-bar'
+import { ScMessageBarModule } from '@speak/ng-bcl/message-bar'
 
 @NgModule({
   declarations: [
@@ -24,16 +30,22 @@ import { ScButtonModule } from '@speak/ng-bcl/button';
   ],
   imports: [
     BrowserModule,
+    // ScSearchableDropListModule,
     AppRoutingModule,
     ScPageModule,
     ScContextDetailsModule,
     ScIconModule,
+    ScPopoverModule,
+    ScProgressBarModule,
+    ScMessageBarModule,
     ScGlobalHeaderModule,
     ScMenuModule,
     ScGlobalLogoModule,
     ScApplicationHeaderModule,
     ScExpanderModule,
+    ScTabsModule,
     ScButtonModule,
+    ScBreadcrumbModule,
     RouterModule.forRoot([
       { path: '', component: StartPageComponent, pathMatch: 'full' },
       { path: 'components', component: ComponentsPageComponent }

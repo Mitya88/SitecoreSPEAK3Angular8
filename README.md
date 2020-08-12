@@ -1,5 +1,7 @@
 # SPEAKSample
 
+This repository contains a sample code for a Sitecore SPEAK3 application based on Angular 8.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
 
 ## Development server

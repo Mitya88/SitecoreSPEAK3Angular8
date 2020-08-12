@@ -1,60 +1,174 @@
 <div class="card mb-3 p-3">
-    <div class="card-block mb-3">
-        <h5 class="card-title">Buttons</h5>
-      <a scBackButton [routerLink]="['/']" text="This is a scBackButton"></a>
-      <button scButton="primary">Primary</button>
-      <button scButton="secondary">Secondary</button>
-      <button scButton="info">Info</button>
-      <button scButton="link">Link</button>
-      <button scButton="chromeless">Chromeless</button>
-    </div>
-    <div class="card-block mb-3">
-        <h5 class="card-title">Full width</h5>
-        <button scButton [isFullWidth]="true">Full width</button>
-      </div>
+  <div class="card-block mb-3">
+    <h5 class="card-title">New Back Button (scBackButton directive)</h5>
+    <a scBackButton [routerLink]="['/']" text="This is a scBackButton"></a>
+
   </div>
 
-  <div class="card mb-3 p-3">
-    <div class="card-block">
-      <h3 class="card-title">Buttons</h3>
-      <p>This is a demo application of Sitecore Speak 3</p>
-    </div>
-  </div>
-  <sc-expander>
-    <sc-expander-header>
+</div>
+
+<div class="card mb-3 p-3">
+  <div class="card-block">
+    <h3 class="card-title">Expanders</h3>
+    <sc-expander>
+      <sc-expander-header>
         <span scExpanderHeaderIcon>
           <sc-icon icon="firewall"></sc-icon>
         </span>
         <h5>Expander</h5>
       </sc-expander-header>
-    <sc-expander-content>
-      <div class="p-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolore nemo voluptatibus consectetur excepturi tempora, cupiditate
-        necessitatibus nam debitis provident animi sapiente nesciunt natus ratione rem pariatur id consequatur eius!
-      </div>
-    </sc-expander-content>
-  </sc-expander>
+      <sc-expander-content>
+        <div class="p-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolore nemo voluptatibus consectetur excepturi
+          tempora, cupiditate
+          necessitatibus nam debitis provident animi sapiente nesciunt natus ratione rem pariatur id consequatur eius!
+        </div>
+      </sc-expander-content>
+    </sc-expander>
 
-  <sc-expander [isOpen]="false">
-    <sc-expander-header>
+    <sc-expander [isOpen]="false">
+      <sc-expander-header>
         <span scExpanderHeaderIcon>
           <sc-icon icon="firewall"></sc-icon>
         </span>
         <h5>Expander - Closed by default</h5>
       </sc-expander-header>
-    <sc-expander-content>
-      <div class="p-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolore nemo voluptatibus consectetur excepturi tempora, cupiditate
-        necessitatibus nam debitis provident animi sapiente nesciunt natus ratione rem pariatur id consequatur eius!
-      </div>
-    </sc-expander-content>
-  </sc-expander>
-  
+      <sc-expander-content>
+        <div class="p-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolore nemo voluptatibus consectetur excepturi
+          tempora, cupiditate
+          necessitatibus nam debitis provident animi sapiente nesciunt natus ratione rem pariatur id consequatur eius!
+        </div>
+      </sc-expander-content>
+    </sc-expander>
 
-  <div class="input-group-append">
-    <span class="input-group-text">
-      <i class="si si-s si-magnifying_glass"></i>
-    </span>
   </div>
+</div>
 
 
+
+
+<div class="card mb-3 p-3">
+  <div class="card-block">
+    <h5 class="card-title">Tab group (progressive)</h5>
+
+    <sc-tab-group variant="progressive">
+      <sc-tab label="Tab 1">
+        <sc-icon icon="about" title="about" size="xxxlarge">about</sc-icon><br />
+      </sc-tab>
+      <sc-tab label="Tab 2">
+        <p>Content</p>
+      </sc-tab>
+      <sc-tab label="Disabled tab" [disabled]="true">
+        <p>Disabled tab.</p>
+      </sc-tab>
+    </sc-tab-group>
+  </div>
+</div>
+
+<div class="card mb-3 p-3">
+  <div class="card-block">
+    <h5 class="card-title">Tab group (sub)</h5>
+
+    <sc-tab-group variant="sub">
+      <sc-tab label="Tab 1">
+        <sc-icon icon="about" title="about" size="xxxlarge">about</sc-icon><br />
+      </sc-tab>
+      <sc-tab label="Tab 2">
+        <p>Content</p>
+      </sc-tab>
+      <sc-tab label="Disabled tab" [disabled]="true">
+        <p>Disabled tab.</p>
+      </sc-tab>
+    </sc-tab-group>
+  </div>
+</div>
+
+<!-- gives build error-->
+<!-- <div class="card mb-3 p-3">
+    <div class="card-block">
+      <h5 class="card-title">Searchable drop list</h5>
+      
+      <sc-searchable-drop-list text="{{selectedResult}}" [(selected)]="selectedResult">
+        <input  id="search" name="search" type="text">
+        <ng-container scSearchableDropListResults>
+          <h6>Lorem ipsum</h6>
+          <div class="list-group">
+            <button type="button" scSearchableDropListResult="Dolor" title="Dolor">Dolor</button>
+            <button type="button" scSearchableDropListResult="Sit" title="Sit">Sit</button>
+            <button type="button" scSearchableDropListResult="Amet" title="Amet">Amet</button>
+          </div>
+        </ng-container>
+      </sc-searchable-drop-list>
+    </div>
+  </div> -->
+
+
+<div class="card mb-3 p-3">
+  <div class="card-block">
+    <h5 class="card-title">Popover</h5>
+
+    <button scButton
+      scPopover="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tellus ut lacus finibus efficitur eget sit amet lorem. Etiam congue aliquam quam, ut sagittis lectus ullamcorper in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pretium elementum feugiat. Donec eget purus tristique, finibus justo nec, faucibus purus. Donec vehicula, risus at tempor dapibus, metus diam sollicitudin neque, sit amet congue tortor justo ac leo. Etiam vulputate nibh non sapien pharetra congue."
+      placement="top">Open popover top</button>
+
+    <button scButton
+      scPopover="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tellus ut lacus finibus efficitur eget sit amet lorem. Etiam congue aliquam quam, ut sagittis lectus ullamcorper in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pretium elementum feugiat. Donec eget purus tristique, finibus justo nec, faucibus purus. Donec vehicula, risus at tempor dapibus, metus diam sollicitudin neque, sit amet congue tortor justo ac leo. Etiam vulputate nibh non sapien pharetra congue."
+      trigger="hover">Open popover on hover</button>
+    <button scButton [scPopover]="basicPopoverTemplate" placement="bottom">Open popover template</button>
+
+    <ng-template #basicPopoverTemplate> Hello world from
+      <strong>template</strong>
+    </ng-template>
+  </div>
+</div>
+<div class="card mb-3 p-3">
+  <div class="card-block">
+    <h5 class="card-title">Progress bar</h5>
+
+    <sc-progress-bar [value]="25">25%</sc-progress-bar>
+  </div>
+</div>
+
+<div class="card mb-3 p-3">
+  <div class="card-block">
+    <h5 class="card-title">Message bar</h5>
+
+    <sc-message-bar>
+      <sc-alert variant="error">
+        <span scAlertText>Lorem ipsum...</span>
+      </sc-alert>
+
+    </sc-message-bar>
+    <sc-message-bar>
+      <sc-alert variant="warning">
+        <span scAlertText>Lorem ipsum...</span>
+        <a href="/more">Read more</a>
+      </sc-alert>
+    </sc-message-bar>
+    <sc-message-bar>
+      <sc-alert variant="info">
+        <span scAlertText>Lorem ipsum...</span>
+        <a href="/more">Read more</a>
+      </sc-alert>
+    </sc-message-bar>
+    <sc-message-bar>
+      <sc-alert variant="confirmation">
+        <span scAlertText>Lorem ipsum...</span>
+        <a href="/more">Read more</a>
+      </sc-alert>
+    </sc-message-bar>
+
+  </div>
+</div>
+
+<div class="card mb-3 p-3">
+  <div class="card-block ">
+    <h5 class="card-title">BreadCrumbs</h5>
+    <sc-breadcrumb class="page-nav">
+      <a scBreadcrumbItem routerLink="/lorem">Lorem</a>
+      <a scBreadcrumbItem routerLink="/lorem/ipsum">Ipsum</a>
+    </sc-breadcrumb>
+
+  </div>
+</div>
