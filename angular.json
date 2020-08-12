@@ -27,7 +27,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+           "styles": [
+ 	      "node_modules/@speak/styling/dist/styles/sitecore.css",
+              "node_modules/@speak/icon-fonts/dist/sitecore-icons.css",
               "src/styles.scss"
             ],
             "scripts": []
