@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href=/sitecore/shell/client/Applications/SPEAKSample/",
+    "postbuild": "ng-sc --entry ./dist/SPEAKSample/index.html",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,6 +22,7 @@
     "@angular/router": "~8.2.14",
     "@speak/icon-fonts": "^1.1.0",
     "@speak/ng-bcl": "^2.0.0-r00116",
+    "@speak/ng-sc-cli": "^0.3.3",
     "@speak/styling": "^1.0.0-r00110",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",

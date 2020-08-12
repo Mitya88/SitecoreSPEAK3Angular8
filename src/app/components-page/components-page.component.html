@@ -1,0 +1,60 @@
+<div class="card mb-3 p-3">
+    <div class="card-block mb-3">
+        <h5 class="card-title">Buttons</h5>
+      <a scBackButton [routerLink]="['/']" text="This is a scBackButton"></a>
+      <button scButton="primary">Primary</button>
+      <button scButton="secondary">Secondary</button>
+      <button scButton="info">Info</button>
+      <button scButton="link">Link</button>
+      <button scButton="chromeless">Chromeless</button>
+    </div>
+    <div class="card-block mb-3">
+        <h5 class="card-title">Full width</h5>
+        <button scButton [isFullWidth]="true">Full width</button>
+      </div>
+  </div>
+
+  <div class="card mb-3 p-3">
+    <div class="card-block">
+      <h3 class="card-title">Buttons</h3>
+      <p>This is a demo application of Sitecore Speak 3</p>
+    </div>
+  </div>
+  <sc-expander>
+    <sc-expander-header>
+        <span scExpanderHeaderIcon>
+          <sc-icon icon="firewall"></sc-icon>
+        </span>
+        <h5>Expander</h5>
+      </sc-expander-header>
+    <sc-expander-content>
+      <div class="p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolore nemo voluptatibus consectetur excepturi tempora, cupiditate
+        necessitatibus nam debitis provident animi sapiente nesciunt natus ratione rem pariatur id consequatur eius!
+      </div>
+    </sc-expander-content>
+  </sc-expander>
+
+  <sc-expander [isOpen]="false">
+    <sc-expander-header>
+        <span scExpanderHeaderIcon>
+          <sc-icon icon="firewall"></sc-icon>
+        </span>
+        <h5>Expander - Closed by default</h5>
+      </sc-expander-header>
+    <sc-expander-content>
+      <div class="p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolore nemo voluptatibus consectetur excepturi tempora, cupiditate
+        necessitatibus nam debitis provident animi sapiente nesciunt natus ratione rem pariatur id consequatur eius!
+      </div>
+    </sc-expander-content>
+  </sc-expander>
+  
+
+  <div class="input-group-append">
+    <span class="input-group-text">
+      <i class="si si-s si-magnifying_glass"></i>
+    </span>
+  </div>
+
+

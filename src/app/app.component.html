@@ -13,6 +13,9 @@
           <sc-menu-item>
             <a scMenuItemLink routerLink="" routerLinkActive="active">Home</a>
           </sc-menu-item>
+          <sc-menu-item>
+            <a scMenuItemLink routerLink="components" routerLinkActive="active">Components</a>
+          </sc-menu-item>
          
         </sc-menu-category>
       </sc-menu>
@@ -20,7 +23,7 @@
   </aside>
   <div scPageAppHeader>
     <!-- ApplicationHeader -->
-    <sc-application-header scPageAppHeader text="UI Library">
+    <sc-application-header scPageAppHeader text="Angular 8 Sample">
       <h5 class="basic-white">Page title</h5>
     </sc-application-header>
   
@@ -29,13 +32,7 @@
     <!-- ActionBar -->
   </div>
   <article scPageContent class="p-4">
-    <div class="card mb-3 p-3">
-      <div class="card-block">
-        <h1 class="card-title">Sitecore Speak 3 UI Library</h1>
-        <p>This is a demo application of Sitecore Speak 3 UI components and styles</p>
-        <p>Feel free to add more styles and components. Custom components are also welcomed</p>
-      </div>
-    </div>
+   
     <router-outlet></router-outlet>
   </article>
   <aside scPageContext >
